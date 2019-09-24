@@ -5,13 +5,22 @@
 	<link rel="stylesheet" type="text/css" href="./exam.css">
 </head>
 <body>
-	<div id="links">
+	<!-- <div id="links">
 		<p><a href="./PHPexam.php">go to PHP exam</a></p>
 		<p><a href="./SQLexam.html">go to SQL exam</a></p>
-	</div>
+	</div> -->
 
 	<div id="example" onclick="changeBackground()">
-		<p onclick="">Example</p>
+		<div>
+			<div class="tooltip">
+				<p onclick="showtooltip()">Example</p>
+				<p class="tooltiptext" id="tooltext">The background is 
+					<button type="button" class="close" onclick="closetooltip()">
+					×
+					</button>
+				</p>
+			</div>			
+		</div>
 	</div>
 
 
@@ -20,7 +29,15 @@
 		document.getElementById("example").style.backgroundColor = "blue";
 	}
 
+	showtooltip = () => {
+		document.getElementById("tooltext").style.visibility = "visible";
+	}
 
+	closetooltip = () => {
+		document.getElementById("tooltext").style.visibility = "hidden";
+		document.getElementById("example").style.position = "relative";
+		document.querySelector(".tooltip").setAttribute("class", "bottom-left");
+	}
 </script>
 </body>
 </html>
