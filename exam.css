@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#example {
+	width: 25%;
+	height: 25vh;
+	box-sizing: border-box;
+	background-color: #00FF00;
+}
+
+#example p {
+	font-family: Arial; 
+	font-size: 12px; 
+	font-style: normal; 
+	font-variant: normal; 
+}
+
+#links {
+	display: flex;
+}
+
+#links p {
+	margin: 1rem;
+}
