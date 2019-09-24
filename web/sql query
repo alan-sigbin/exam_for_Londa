@@ -1,0 +1,8 @@
+SELECT * FROM `products` WHERE `price`> 50;
+
+DELETE FROM `products` WHERE `weight` > 0;
+
+SELECT COUNT(id) FROM products UNION SELECT AVG(price)
+FROM products;
+
+CREATE TABLE products_1 AS (SELECT * FROM `products` WHERE `id` % 2 = 1);
