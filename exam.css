@@ -41,12 +41,15 @@ body {
 }
 
 .tooltip .tooltiptext {
-  visibility: hidden;
-  padding: .2rem;
-  width: 100%;
-  background-color: black;
-  color: #fff;
-  text-align: center;
+	visibility: hidden;
+	padding: .2rem;
+	width: 100%;
+	background-color: blue;
+	color: #fff;
+	text-align: center;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #fff;
 }
 
 .bottom-left {
